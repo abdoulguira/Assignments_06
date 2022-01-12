@@ -1,6 +1,6 @@
-import './App.css';
+import React from 'react'
 
-function App() {
+export default function App() {
   return (
     <div>
 
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+
