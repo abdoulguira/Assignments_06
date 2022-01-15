@@ -13,7 +13,7 @@ export default function ZipInput(){
     function getCities(event) {
         event.preventDefault()
 
-        fetch(`http://ctp-zip-api.herokuapp.com/zip/${zip}`)
+        fetch(`https://ctp-zip-api.herokuapp.com/zip/${zip}`)
             .then(function(response) {
                 if (response.ok) {
                     return response.json()
