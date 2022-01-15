@@ -1,5 +1,5 @@
 import React from "react";
-import City from "./City";
+import Cities from "./Cities";
 
 export default function ZipInput(){
 
@@ -13,7 +13,7 @@ export default function ZipInput(){
     function getCities(event) {
         event.preventDefault()
 
-        fetch(`http://ctp-zip-api.herokuapp.com/zip/${zip}`)
+        fetch(`https://ctp-zip-api.herokuapp.com/zip/${zip}`)
             .then(function(response) {
                 if (response.ok) {
                     return response.json()
@@ -40,11 +40,7 @@ export default function ZipInput(){
                 />  <br /> <br />
                 <button>Search</button>
             </form>
-            {
-                cities ?
-                    cities.map(entry => <City key={entry.RecordNumber} entry={entry}></City>)
-                    : <h2>No matching cities found :(</h2>
-            }
+            <Cities cities={cities} />
         </div>
     )
 
