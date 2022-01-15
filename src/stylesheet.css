@@ -28,3 +28,25 @@
     font-weight: bold;
     margin-right: 5px;
 }
+
+.filter-space {
+    /*display: inline;*/
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+}
+
+.filter-trigger {
+    /*display: inline;*/
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.options-area {
+    /*display: inline;*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
